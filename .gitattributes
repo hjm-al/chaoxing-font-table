@@ -1,0 +1,5 @@
+# 默认文本文件在仓库内统一 LF
+* text=auto eol=lf
+
+# 镜像数据必须逐字节一致：禁止任何换行/编码转换，且不做行级 diff
+ttf/** -text -diff linguist-generated=true

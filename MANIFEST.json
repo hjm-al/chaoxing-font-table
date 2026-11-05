@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-11-05T11:00:00+08:00",
+  "purpose": "第三方静态资源镜像清单，用于 chaoxing-assistant-clean 的 @resource 备用托管；本目录不随脚本发布。",
+  "items": [
+    {
+      "file": "ttf/2.0/table.json",
+      "declaredAs": "@resource Table",
+      "consumer": "超星学习通助手.user.js -> removeF() -> GM_getResourceText(\"Table\")",
+      "bytes": 355427,
+      "sha256": "FBC6AE3C795A46CA2BD0994E68E7CB90CA4D9A046F335512657760D9A4FDF875",
+      "originalUrl": "https://www.forestpolice.org/ttf/2.0/table.json",
+      "originalAuthor": "wyn665817",
+      "originalAuthorEmail": "wyn665817@163.com",
+      "originalSource": "https://scriptcat.org/zh-CN/script-show-page/432",
+      "license": "MIT",
+      "embeddedVersion": "20220515.1",
+      "modified": false,
+      "structure": {
+        "entries": 20906,
+        "mappedEntries": 20902,
+        "metadataEntries": 4,
+        "keyLengths": [6, 7, 8, 9],
+        "valueType": "integer unicode codepoint",
+        "valueRange": [19968, 40869]
+      },
+      "mirrorUrls": [
+        "https://cdn.jsdelivr.net/gh/<owner>/<repo>@<tag>/ttf/2.0/table.json",
+        "https://raw.githubusercontent.com/<owner>/<repo>/<tag>/ttf/2.0/table.json"
+      ],
+      "notes": [
+        "原样逐字节复制，未做任何修改。",
+        "替换 @resource 时须使用固定 tag 或 commit SHA，不得指向 main。",
+        "替换后需同步更新 任务引擎回归测试.js 中的 @resource 域名白名单。"
+      ]
+    }
+  ]
+}
