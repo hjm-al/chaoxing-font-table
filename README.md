@@ -82,7 +82,20 @@ Get-FileHash ".\ttf\2.0\table.json" -Algorithm SHA256
 
 结果应为 `FBC6AE3C795A46CA2BD0994E68E7CB90CA4D9A046F335512657760D9A4FDF875`。
 
+## 仓库地址（已上线）
+
+- 镜像仓库：<https://github.com/hjm-al/chaoxing-font-table>
+- 主仓库：<https://github.com/hjm-al/chaoxing-assistant>
+
+主仓库脚本头部的 `@resource Table` 仍指向 `https://www.forestpolice.org/ttf/2.0/table.json`（上游可用时优先用它）。若该站失效，把那一行改成镜像仓库里的原始地址即可：
+
+```
+https://raw.githubusercontent.com/hjm-al/chaoxing-font-table/main/ttf/2.0/table.json
+```
+
 ## 推送到 GitHub 的建议步骤
+
+已执行完毕，留作日后重建备忘：
 
 ```powershell
 cd "C:\Users\o\Desktop\脚本\第三方资源镜像"
@@ -90,7 +103,7 @@ git init
 git add .
 git commit -m "feat: mirror chaoxing font table (wyn665817, MIT)"
 git branch -M main
-git remote add origin https://github.com/<用户名>/<仓库名>.git
+git remote add origin git@github.com:hjm-al/chaoxing-font-table.git
 git push -u origin main
 git tag v1.0.0
 git push origin v1.0.0
